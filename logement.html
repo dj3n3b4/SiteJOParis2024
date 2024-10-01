@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'fr', // Langue par défaut de la page
+      includedLanguages: 'en,fr', // Langues disponibles pour la traduction
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logements</title>
+    <style>
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff8c00, #ff6b6b);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff6b6b;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .section-image img {
+            max-width: 80%; /* Réduisez à 80% de la largeur parent */
+            max-height: 500px; /* Limite la hauteur maximale */
+            height: auto; /* Conserve les proportions */
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+
+        ul li {
+
+            text-decoration: none;
+            list-style: none;  
+        }
+
+        header .btn-home {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #ff6b6b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .btn-home:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+header .btn-home:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 107, 107, 0.8); /* 80% d'opacité */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: rgba(255, 140, 0, 0.8); /* 80% d'opacité au survol */
+}
+
+    </style>
+</head>
+
+<body>
+<header>
+    <img  src="images/logo.png" alt="Logo" style="width: 150px; height: auto;" />
+    <a href="sitejo.html" class="btn-home">retour à l'Accueil</a>
+    <h1>Logements concernant les Jeux Olympiques de Paris 2024</h1>
+</header>
+
+<nav>
+    <a href="#localisation">Localisation</a>
+    <a href="#ecologie">Ecologie</a>
+    <a href="#heritage">Héritage</a>
+    <a href="#avantages-inconvenients">Avantages et inconvénients</a>
+</nav>
+
+    <!-- Localisation et Conception -->
+    <section id="localisation" class="content">
+        <h2>🏙️ Localisation et Conception du Village Olympique</h2>
+        <p>
+            Le village olympique de Paris 2024 s'étend sur <strong>51 hectares</strong> dans le département de la 
+            Seine-Saint-Denis, englobant trois communes : <strong>Saint-Denis</strong>, <strong>Saint-Ouen</strong> et 
+            <strong>L'Île-Saint-Denis</strong>. Cette situation stratégique assure une proximité avec les principaux sites 
+            olympiques, notamment le <strong>Stade de France</strong>, facilitant ainsi l'accès aux compétitions.
+        </p>
+        <div class="section-image">
+            <img src="images/vueaerienne.jpg" alt="Vue aérienne du Village Olympique de Paris" />
+            <figcaption><a href="https://th.bing.com/th/id/OIP.xQkr_OKwnostPVO37fVQSwHaEt?pid=ImgDet&w=84&h=84&c=7&dpr=1,3"> source image</a></figcaption>
+        </div>
+        <p>
+            Conçu pour accueillir environ <strong>14 500 athlètes</strong> et membres du personnel, le village propose des 
+            logements modernes ainsi que des installations dédiées au bien-être des athlètes, comprenant des salles 
+            d'entraînement, des espaces de relaxation, des services médicaux et des restaurants.
+        </p>
+    </section>
+  
+    <!-- Une Approche Écologique Innovante -->
+    <section id="ecologie" class="content">
+        <h2>🌱 Une Approche Écologique Innovante</h2>
+        <p>
+            Le village olympique de Paris 2024 se distingue par une approche écologique innovante, intégrant des solutions 
+            durables à chaque étape de sa conception :
+        </p>
+        <ul >
+            <li><strong>Matériaux écologiques</strong> : La construction privilégie des matériaux à faible empreinte carbone :
+                <ul>
+                    <li>Structures en <strong>bois certifié FSC</strong>, réduisant l'empreinte carbone.</li>
+                    <li>Utilisation de <strong>matériaux biosourcés</strong> (chanvre, paille, terre crue) pour une meilleure 
+                    efficacité thermique.</li>
+                    <li>Revêtements de sol en <strong>bambou</strong> et <strong>linoléum naturel</strong>, matériaux 
+                    renouvelables et biodégradables.</li>
+                    <li>Utilisation de <strong>béton bas carbone</strong> pour les fondations.</li>
+                    <li>Recyclage des matériaux de construction pour limiter l'extraction de nouvelles ressources.</li>
+                </ul>
+            </li>
+            <li><strong>Efficacité énergétique</strong> : Les bâtiments sont conçus pour maximiser l'efficacité énergétique :
+                <ul>
+                    <li>Installation de <strong>panneaux solaires</strong> sur les toits pour générer de l'énergie renouvelable.</li>
+                    <li>Utilisation de <strong>pompes à chaleur</strong> pour le chauffage et la climatisation.</li>
+                    <li>Intégration de <strong>systèmes d'isolation performants</strong> pour minimiser les pertes d'énergie.</li>
+                    <li>Utilisation de <strong>fenêtres à double vitrage</strong> pour une meilleure efficacité thermique.</li>
+                    <li>Systèmes de <strong>récupération d'eau de pluie</strong> pour l'irrigation des espaces verts.</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="section-image">
+            <img src="images/villageparis.jpg" alt="Construction écologique du Village Olympique" />
+            <figcaption><a href="https://th.bing.com/th/id/OIP.Q75uxv7QHlAo5TpM-0wlYAHaFP?pid=ImgDet&w=84&h=84&c=7&dpr=1,3"> source image</a></figcaption>
+        </div>
+    </section>
+  
+    <!-- Logement des Athlètes -->
+    <section id="logement" class="content">
+        <h2>🏠 Logement des Athlètes : Confort et Fonctionnalité</h2>
+        <p>
+            Les logements ont été pensés pour offrir un cadre de vie confortable et fonctionnel aux athlètes :
+        </p>
+        <ul>
+            <li><strong>Confort</strong> :
+                <ul>
+                    <li>Appartements spacieux avec <strong>lits en carton recyclé</strong>, une innovation écologique respectueuse de 
+                    l'environnement.</li>
+                    <li>Des <strong>espaces de détente</strong> et des <strong>zones de bien-être</strong> sont disponibles pour garantir le repos 
+                    des athlètes.</li>
+                    <li>Les logements bénéficient d'une <strong>ventilation naturelle</strong> pour une qualité de l'air saine.</li>
+                </ul>
+            </li>
+            <li><strong>Espaces communautaires</strong> : Des lieux de rencontre et d'échange, tels que des salles communes et des espaces de 
+            jeux, favorisent la cohésion entre les athlètes.</li>
+        </ul>
+        <div class="section-image">
+            <img src="images/litcarton.jpg" alt="Logements des athlètes" />
+            <figcaption><a href="https://th.bing.com/th/id/OIP.u5r-oaWOQAQyAPY6VS715gHaEK?pid=ImgDet&w=84&h=84&c=7&dpr=1,3"> source image</a></figcaption>
+        </div>
+    </section>
+  
+    <!-- L'Héritage du Village Olympique -->
+    <section id="heritage" class="content">
+        <h2>🌍 L'Héritage du Village Olympique</h2>
+        <p>
+            Après les Jeux, le village sera transformé en un quartier résidentiel durable avec plus de <strong>6 000 logements</strong>, dont 
+            <strong>40 % seront des logements sociaux</strong> ou abordables.
+        </p>
+        <ul>
+            <li><strong>Nouveaux Logements</strong> : Le village sera transformé pour devenir un quartier mixte.
+                <ul>
+                    <li>6 000 logements, dont 40 % à prix abordables ou sociaux.</li>
+                    <li>Les appartements seront adaptés pour un usage résidentiel après les Jeux.</li>
+                </ul>
+            </li>
+            <li><strong>Équipements Publics</strong> : Plusieurs infrastructures pour améliorer la qualité de vie :
+                <ul>
+                    <li>Création de <strong>écoles</strong>, <strong>crèches</strong> et <strong>bureaux</strong> pour le développement du quartier.</li>
+                    <li>Ajout de <strong>parcs</strong> et d'espaces verts pour un cadre de vie agréable.</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="section-image">
+            <img src="images/heritage.jpg" alt="Vue future du quartier après les Jeux" />
+            <figcaption><a href="https://www.campogalego.gal/wp-content/uploads/2024/07/villa-olimpica_Paris.jpg"> source image</a></figcaption>
+        </div>
+    </section>
+  
+    <!-- Avantages et Inconvénients -->
+    <section id="avantages-inconvenients" class="content">
+        <h2>✅ Avantages et ❌ Inconvénients</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>✅ Avantages</th>
+                    <th>❌ Inconvénients</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Transformation en quartier urbain avec <strong>6 000 logements</strong>.</li>
+                            <li>Développement local en Seine-Saint-Denis.</li>
+                            <li>Approche écologique et utilisation de <strong>matériaux durables</strong>.</li>
+                            <li>Amélioration des infrastructures locales (écoles, commerces).</li>
+                            <li>Impact économique positif avec la création d'emplois.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Déplacement de populations et d'activités existantes.</li>
+                            <li>Coûts élevés et investissements publics importants.</li>
+                            <li>Risque de gentrification et augmentation des prix immobiliers.</li>
+                            <li>Défis de commercialisation des appartements après les Jeux.</li>
+                            <li>Impact environnemental de la construction à grande échelle.</li>
+                            <li>Adaptation nécessaire des logements pour un usage résidentiel après les Jeux.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paris Olympiques | Conception Web par Habachi Ghizlane, Diallo Djeneba, Janjua Jaweryah.</p>
+        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️ Retour en haut</button>
+    </footer>
+
+</body>
+</html>
+

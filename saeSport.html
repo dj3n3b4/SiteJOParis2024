@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'fr', // Langue par défaut de la page
+      includedLanguages: 'en,fr', // Langues disponibles pour la traduction
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epreuves</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff8c00, #ff6b6b);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff6b6b;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animation de transition */
+        section {
+            opacity: 1;
+        }
+
+        section.show {
+            opacity: 1;
+            transition: opacity 0.7s ease-in-out;
+        }
+
+        /* Styles de boutons d'interaction */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff8c00;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff6b6b;
+        }
+
+        /* Section avec background */
+        #home {
+            background: url('https://source.unsplash.com/1600x900/?olympics') no-repeat center center/cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            padding: 100px 20px;
+        }
+
+        #home .content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            border-radius: 15px;
+        }
+
+        /* Style des images dans les sections */
+        .section-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        header .btn-home {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #ff6b6b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .btn-home:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 107, 107, 0.8); /* 80% d'opacité */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: rgba(255, 140, 0, 0.8); /* 80% d'opacité au survol */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img  src="images/logo.png" alt="Logo" style="width: 150px; height: auto;" />
+        <a href="sitejo.html" class="btn-home">retour à l'Accueil</a>
+        <h1>Épreuves concernant les Jeux Olympiques de Paris 2024</h1>
+    </header>
+   
+
+    <nav>
+        <a href="#natation">Natation</a>
+        <a href="#judo">Judo</a>
+        <a href="#cyclisme">Cyclisme</a>
+    </nav>
+
+    <!-- intro -->
+    <section id="principal" class="content">
+        <div class="section-image"></div>
+            <figure>
+                <img src="images/jo.jpg" alt="logo JO">
+                <figcaption><a href="https://www.datacentermarket.es/wp-content/uploads/2021/08/32256_61.jpg">source image</a></figcaption>
+            </figure>
+        </div>
+        <p>Les Jeux Olympiques de Paris 2024 ont mis en avant trois épreuves majeures qui ont marqué l'événement. La natation, le judo et le cyclisme ont chacun apporté leur lot de défis et d’innovations. Découvrons ces moments clés plus en détail.</p>
+    </section>
+    
+    <!-- natation et ecologie-->
+    <section id="natation" class="content">
+        <h2>
+            Natation dans la seine, objectif réalisé ?    :
+        </h2>
+        <p>La France à une manière bien originale d'inaugurer les JO.
+            En effet, c'est dans la Seine que cette dernière a décidé d'inaugurer la baignade pour le grand public ce 26 juillet 2024.
+            Elle avait déjà été choisie en 1900, lors des premiers JO.  
+            Cependant, en raison de la dégradation de la qualité de l’eau et d’un potentiel danger que cela pouvait représenter pour la santé, elle fut interdite de baignade en 1924. Et voilà qu’ aujourd’hui, 100 ans plus tard, la France à pris la décision d' utiliser la Seine pour les JO 2024 ! <br>
+            
+           <br> Néanmoins, afin que les JO se passent dans les meilleures conditions possibles en évitant les risques liés à la santé, le gouvernement français à élaborés des stratégies bien précises.  En effet, la France a déboursé plus de 1.14 millions d’euros pour nettoyer la Seine. 
+            Le but étant d’avoir une eau de qualité durable, d’améliorer la biodiversité et réduire les pollutions. 
+            Parmi des initiatives écologiques prises en compte pour cette épreuve sportive, nous pouvons évoquer le bassin de stockage des eaux pluviales d'Austerlitz. <br>
+            
+           <br> Cette innovation permet de mieux se préparer aux événements météorologiques exceptionnels en évitant les déversements d’eaux usées dans la Seine en cas de fortes pluies. Grâce à ce bassin, l’excédent d’eau s'écoule dans le réseau d’égouts pour ensuite être traité et réduire la pollution de l’eau.
+            Cependant, malgré les efforts de dépollution de la Seine, plusieurs épreuves ont été annulées pour des raisons sanitaires : la pluie s’abattait sur la Seine pendant quasiment tout le mois de juillet et août la rendant polluée.
+            Même si une épreuve s’est déroulée le 31 juillet à la Seine, le 29 juillet et le 6 août ont laissé beaucoup de personnes déçus de ne pas avoir vu les nageurs sportifs se baigner dans ce lieu culte. <br>
+        
+            <br>
+            Le point qui a certainement marqué les esprits des amoureux de la natation est la façon particulière d’ouvrir les épreuves sportifs dans la Seine, alliant sport et nature. Par ailleurs, les mesures de dépollution mais aussi d'assainissement de l’eau traduisent une volonté et un grand pas dans la prise de conscience et l’importance de veiller à un équilibre de l’écosystème. <br>
+            
+            
+            </p>
+            <div class="section-image" style="display: flex; justify-content: space-between;">
+                <div style=" width: 48%; height: 85vh;"><img src="images/natation.jpg" alt=" A la Seine" style=" width: 100%; height:100%; left:0%;  object-fit: cover;"><figcaption><a href="https://th.bing.com/th/id/OIP.K25Sht-qjbJ3Z2dmqrKCVgHaEK?pid=ImgDet&w=84&h=84&c=7&dpr=1,3"> source image</a></figcaption></div>
+                 <div style=" width: 48%; height: 85vh;"><img src="images/bassinstockage.jpg" alt="bassin de Stockage Austerlitz" style="  width: 100%; height:100%;  left:50%; object-fit: cover; "><figcaption><a href="https://th.bing.com/th/id/OIP.eL9kax0Wvl8FDl73ncSpcgHaE8?pid=ImgDet&w=84&h=84&c=7&dpr=1,3"> source image</a></figcaption></div>
+             
+             </div>
+      
+    </section>
+
+    <!-- judo et natation  -->
+    <section id="judo" class="content">
+        <div>
+         
+        <h2>Le judo, un début compliqué , une fin inoubliable : </h2>
+        <p> <br> Pour le déroulement des épreuves du judo, l'arena Champs sur Mars a été choisie par rapport à  Bercy. Alors que les travaux se sont terminés juste à temps, c’est avec difficultés que les épreuves ont été  inaugurées ce 27 juillet. 
+            <br>
+            <br>Il apparaissait que la plateforme de judo n’était pas conforme aux règles internationales. Les tapis, notamment à cause de leurs tailles et épaisseurs n’étaient pas adaptés aux judokas. Par ailleurs, la poussière sur les tatamis ne facilita pas les choses.  En effet, les épreuves de judokas se déroulent pieds nus et en kimono blanc. Se retrouver avec les pieds poussiéreux et le kimono gris a la fin d’un combat, c’est plutôt embêtant.   La question de l’hygiène lors de cet événement n’est pas passé inaperçu. Les problèmes ont vite été résolus par la suite. 
+            <br>
+            <br> Le début des épreuves se seraient certainement déroulés dans de meilleures circonstances s’il y avait eu une meilleure communication entre le Comité d’organisation des jeux, la Fédération internationale et la Fédération française.  
+            <br>
+            <br> Malgré que certains fans, déçus d’apprendre que les JO se dérouleront à l'aréna Champs sur Mars plutôt que l’arena de Bercy, sont tout de même sortis de cet évènement, marqué par la bonne ambiance qui y résidait. 
+            <br>
+            <br> Personne n’est resté indifférent par cet incroyable travail mené par l’architecte Jean-Michel Wilmotte qui a utilisé des  matériaux durables tel que le bois pour structurer cet aréna au parc de Champs sur Mars. Tout un aménagement avait été pensé. La structure de ce bâtiment en fait un projet totalement en phase avec les impératifs environnementaux requis par Paris 2024. Par ailleurs, cette Arène  pourra être réutilisée dans de multiples configurations, et dans d’autres lieux non encore définis. 
+            <br>
+        </p>
+
+    <div class="section-image" style="display: flex; justify-content: space-between;">
+           <div style=" width: 48%; height: 85vh;"><img src="images/champdemars1.jpg" alt="Interieur Arena Champs sur Mars" style=" width: 100%; height:100%; left:0%;  object-fit: cover;"><figcaption><a href="https://th.bing.com/th/id/OIP.bJ_3BrZYsS9MK11LbE6bJQHaE8?pid=ImgDet&w=84&h=84&c=7&dpr=1,3"> source image</a></figcaption></div>
+            <div style=" width: 48%; height: 85vh;"><img src="images/champdemars2.jpg" alt="Architecture Jean-Mihèle Wilmotte" style="  width: 100%; height:100%;  left:50%; object-fit: cover; "><figcaption><a href="https://th.bing.com/th/id/OIP.1R7YHhLPnkB8L5pLERd0PgHaGN?pid=ImgDet&w=84&h=84&c=7&dpr=1,3"> source image</a></figcaption></div>
+        
+        </div>
+    </div>
+    </section>
+
+    <!--Cyclisme -->
+    <section id="cyclisme" class="content">
+        <h2> Le cyclisme en plein dans l’ innovation futuriste : </h2>
+        <p>
+            <br> Les épreuves de cyclisme se sont déroulées à partir du 5 août dans le vélodrome de Saint-Quentin-en- Yvelines. Des dispositions pour faciliter les déplacements avaient été mises en place. 
+            <br> 
+
+            <br>Une innovation à particulièrement retenu notre intention : le UrbanLoop. Ce sont des petites voitures sur rails fonctionnant à l'électricité. Elles peuvent contenir une ou deux personnes. Il n’y a pas de conducteurs, tout est contrôlé par les IA ! En plus de cela, c’est gratuit. il se situe à 1km du Vélodrome, génial n’est-ce pas ? 
+            <br> 
+
+            <br>N'oublions pas le vaste réseau de pistes cyclables mis en place de 100km reliant les pistes Olympiques entre eux. Les vélos sont facilement rentables, en plus de participer aux JO, une petite balade en vélo avec la famille serait agréable, qu’en pensez-vous ? . 
+            <br> 
+
+            <br> Les JO ont motivé Saint-Quentin-en-Yvelines à favoriser la mobilité durable et faciliter l’accessibilité tout en innovant des nouvelles technologies tel que le Urban Loop qui à très certainement suscité des souvenirs chez les fans des JO. La ville s’est inscrite dans une démarche éco-responsable. 
+             <br>
+        </p>
+        <div class="section-image" style="display: flex; justify-content: space-between;">
+            <div style=" width: 48%; height: 85vh;"><img src="images/urbanloop.jpg" alt="L'UrbanLoop" style=" width: 100%; height:100%; left:0%;  object-fit: cover;"><figcaption><a href="https://static.actu.fr/uploads/2022/10/25434-221004094735241-0-960x640.jpg"> source image</a></figcaption></div>
+             <div style=" width: 48%; height: 85vh;"><img src="images/velodrome.jpg" alt="Architecture Jean-Mihèle Wilmotte" style="  width: 100%; height:100%;  left:50%; object-fit: cover; "><figcaption><a href="https://th.bing.com/th/id/OIP.u4IegeoD63rtAnXLSaOsnwAAAA?pid=ImgDet&w=84&h=84&c=7&dpr=1,3"> source image</a></figcaption></div>
+         
+         </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Paris Olympiques | Conception Web par Habachi Ghizlane, Diallo Djeneba, Janjua Jaweryah.</p>
+        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️ Retour en haut</button>
+    </footer>
+
+</body>
+
+</html>
